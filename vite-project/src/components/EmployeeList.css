@@ -1,0 +1,48 @@
+th {
+  background-color: black !important;
+  color: #fff !important;
+}
+
+.create-list {
+  color: #fff;
+  text-decoration: none;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.create-list:hover {
+  background-color: #fff;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+@media (max-width: 786px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table-responsive .fas {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,56 @@
+.menu-container {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.navbar-brand img {
+  width: 50px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #007bff;
+}
+
+.menu .home-section {
+  display: flex;
+  gap: 15px;
+}
+
+.menu .user-section {
+  display: flex;
+  gap: 15px;
+}
+
+.username {
+  color: #dc3545;
+}
+
+.username:hover {
+  color: #ff6f61;
+}
+
+.navbar-toggler-icon {
+  color: #333;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}
