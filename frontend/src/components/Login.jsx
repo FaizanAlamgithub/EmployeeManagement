@@ -25,7 +25,8 @@ function Login() {
       return handleError("All fields are required");
     }
     try {
-      const url = "http://localhost:4000/auth/api/login";
+      const url =
+        "https://employeemanagement-backend-z5go.onrender.com/auth/api/login";
       const response = await fetch(url, {
         method: "POST",
         headers: {

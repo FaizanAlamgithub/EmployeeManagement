@@ -22,7 +22,7 @@ const EditListing = () => {
     const fetchListing = async () => {
       try {
         const response = await fetch(
-          `http://localhost:4000/api/listing/edit/${id}`
+          `https://employeemanagement-backend-z5go.onrender.com/api/listing/edit/${id}`
         );
         if (!response.ok) {
           throw new Error("Error fetching the listing data");
@@ -71,7 +71,7 @@ const EditListing = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:4000/api/listing/update/${id}`,
+        `https://employeemanagement-backend-z5go.onrender.com/api/listing/update/${id}`,
         {
           method: "PUT",
           headers: {

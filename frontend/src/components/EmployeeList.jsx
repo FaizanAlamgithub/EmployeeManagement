@@ -9,7 +9,9 @@ const Listings = () => {
   useEffect(() => {
     const fetchListings = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/listing");
+        const response = await fetch(
+          "https://employeemanagement-backend-z5go.onrender.com/api/listing"
+        );
         const data = await response.json();
         setListings(data);
       } catch (error) {
@@ -24,7 +26,7 @@ const Listings = () => {
     if (window.confirm("Are you sure you want to delete this listing?")) {
       try {
         const response = await fetch(
-          `http://localhost:4000/api/listing/delete/${listingId}`,
+          `https://employeemanagement-backend-z5go.onrender.com/api/listing/delete/${listingId}`,
           {
             method: "DELETE",
           }

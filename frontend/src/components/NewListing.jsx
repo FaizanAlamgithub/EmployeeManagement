@@ -50,13 +50,16 @@ const NewListing = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:4000/api/listing/new", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://employeemanagement-backend-z5go.onrender.com/api/listing/new",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
         setFormData({
