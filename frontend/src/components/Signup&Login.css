@@ -8,6 +8,12 @@
   background-color: #fff;
 }
 
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #000000 !important;
+}
+
 .auth-container h4 {
   margin-bottom: 20px;
 }
