@@ -10,7 +10,7 @@ const Listings = () => {
     const fetchListings = async () => {
       try {
         const response = await fetch(
-          "https://employeemanagement-backend-z5go.onrender.com/listing"
+          "https://employeemanagement-backend-z5go.onrender.com/api/listing"
         );
         const data = await response.json();
         setListings(data);

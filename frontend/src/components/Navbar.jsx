@@ -50,32 +50,32 @@ const Navbar = () => {
                   Home
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/list">
-                  Employee List
-                </a>
-              </li>
-            </ul>
-            <ul className="navbar-nav ms-auto">
               {loggedInUser ? (
                 <>
                   <li className="nav-item">
-                    <a className="nav-link">{loggedInUser}</a>
-                  </li>
-                  <li className="nav-item">
-                    <p className="nav-link username" onClick={handleLogout}>
-                      Logout
-                    </p>
-                    <ToastContainer />
+                    <a className="nav-link" href="/list">
+                      Employee List
+                    </a>
                   </li>
                 </>
-              ) : (
-                ""
-              )}
+              ) : null}
             </ul>
+            {loggedInUser ? (
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <span className="nav-link">{loggedInUser}</span>
+                </li>
+                <li className="nav-item">
+                  <p className="nav-link username" onClick={handleLogout}>
+                    Logout
+                  </p>
+                </li>
+              </ul>
+            ) : null}
           </div>
         </div>
       </nav>
+      <ToastContainer />
     </div>
   );
 };
