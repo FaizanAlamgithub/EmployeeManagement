@@ -12,7 +12,6 @@ import Login from "./Login";
 import Signup from "./Signup";
 import Dashboard from "./Dashboard";
 import RefreshHandler from "./RefreshHandler";
-import Navbar from "./Navbar";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
