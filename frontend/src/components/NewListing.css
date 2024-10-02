@@ -12,3 +12,8 @@
   color: black;
   border: 1px solid black;
 }
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #000000 !important;
+}
